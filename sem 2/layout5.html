@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>layoutt ke 5</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 20px;
+			text-transform: uppercase;
+			text-align: center;
+			border: 1px solid #fefefe;
+		}
+		.container{
+			width: 100%;
+			height: 100%;
+
+		}
+		.container div.header{
+			background-color: pink;
+			padding: 52px;
+			margin-left: 1.2px;
+		}
+		.container div.konten{
+			background-color: pink;
+		}
+		.container div.left{
+			width: 100%;
+		}
+		.konten{
+			display: flex;
+		
+		}
+		.space{
+			display: flex;
+			justify-content: space-between;
+			
+		}
+		.kotak_bawah{
+			width: 100%;
+			height: 100%;
+		}
+		.right{
+		
+			flex: 10%;
+			background-color: pink;
+			height: 296px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.solo {
+			width: 70%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		/* .right_kanan {
+			flex: 40%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		} */
+		.left .space .content{
+			height: 300px;
+		}
+		.content{
+			background-color: pink;
+			width: 100%;
+			height: 100%;
+			
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.ataskiri{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 290px;
+			background-color: pink;
+			
+		}
+		.box4{
+			background-color: pink;
+			height: 50px;
+		}
+		@media screen and (max-width: 700px) {
+			.container{
+				display: flex;
+				flex-direction: column;
+			}
+			.konten{
+				display: flex;
+				flex-direction: column;
+				
+			}
+			.container .konten .right{
+				
+				padding: 50px;
+			}
+			.left .space .content{
+				height: 150px;
+			}
+			.ataskiri{
+				height: 400px;
+			}
+			.container{
+				display: flex;
+				flex-direction: column;
+			}
+			.space{
+				
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">header</div>
+		<div class="konten">
+		<div class="left">
+		<div class="ataskiri">
+            <div class="content">1</div>
+			
+        </div>
+		<div class="space">
+			<div class="solo">
+				<div class="content">1</div>
+			</div>
+		
+		<div class="content">2</div>
+		<div class="content">1</div>
+		<div class="content">2</div>
+		<div class="content">1</div>
+		<div class="content">2</div>
+		
+		</div>
+		</div>
+		<div class="kotak_bawah">
+	<div class="right">content right</div>
+	</div>
+</body>
+</html>
